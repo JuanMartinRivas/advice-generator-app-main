@@ -1,11 +1,9 @@
-html{
+html {
   font-size: 28px;
 }
 
-h1 {
-  background-color: $dark-blue;
-  color: $neon-green;
-  font-family: 'Manrope', sans-serif;
+body {
+  font-family: "Manrope", sans-serif;
 }
 
 .container {
@@ -17,6 +15,8 @@ h1 {
 .row {
   display: flex;
   flex-direction: column;
-  @media(min-width: 900px) {
+  
+  @media (min-width: 900px) {
+    flex-direction: row;
   }
 }
