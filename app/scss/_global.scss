@@ -1,0 +1,22 @@
+html{
+  font-size: 28px;
+}
+
+h1 {
+  background-color: $dark-blue;
+  color: $neon-green;
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  @media(min-width: 900px) {
+  }
+}
