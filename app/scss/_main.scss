@@ -1,0 +1,50 @@
+main {
+  .card {
+    background-color: $dark-grayish-blue;
+    position: relative;
+    top: 5em;
+    border-radius: 15px;
+    padding: 1.75em 1em 0.25em;
+  }
+
+  .advice-id {
+    font-size: 0.45rem;
+    color: $neon-green;
+    text-align: center;
+    letter-spacing: 0.25em;
+    font-weight: 600;
+  }
+
+  .advice-text {
+    font-size: 0.75rem;
+    color: $light-cyan;
+    text-align: center;
+    margin-top: 1em;
+  }
+  .pattern {
+    margin-top: 1em;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .dice-btn {
+    color: $dark-blue;
+    background-color: $neon-green;
+    border: none;
+    border-radius: 100%;
+    padding: 0.5em;
+    position: relative;
+    top: 1.25em;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.25s;
+
+    &:hover {
+      box-shadow: 0 0 30px 1px $neon-green;
+    }
+  }
+}

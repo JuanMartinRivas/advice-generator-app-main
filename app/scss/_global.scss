@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
+  background-color: $dark-blue;
 }
 
 .container {
@@ -15,7 +16,7 @@ body {
 .row {
   display: flex;
   flex-direction: column;
-  
+
   @media (min-width: 900px) {
     flex-direction: row;
   }
