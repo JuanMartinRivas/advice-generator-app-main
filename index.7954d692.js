@@ -1,0 +1,2 @@
+const e=document.querySelector(".id-number"),t=document.querySelector(".text");document.querySelector(".dice-btn").addEventListener("click",function(){fetch("https://api.adviceslip.com/advice",{cache:"no-cache"},{mode:"cors"}).then(e=>e.json()).then(c=>{e.textContent=`${c.slip.id}`,t.textContent=`${c.slip.advice}`}).catch(e=>{console.error(e)})}),console.log("Parcel is working. Hurray!");
+//# sourceMappingURL=index.7954d692.js.map
