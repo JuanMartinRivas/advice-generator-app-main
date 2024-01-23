@@ -2,9 +2,12 @@ main {
   .card {
     background-color: $dark-grayish-blue;
     position: relative;
-    top: 5em;
     border-radius: 15px;
     padding: 1.75em 1em 0.25em;
+
+    @media (display-mode:fullscreen) {
+      transform: translateY(25%);
+    }
   }
 
   .advice-id {
@@ -13,14 +16,16 @@ main {
     text-align: center;
     letter-spacing: 0.25em;
     font-weight: 600;
+    text-transform: uppercase;
   }
 
   .advice-text {
-    font-size: 0.75rem;
+    font-size: .75rem;
     color: $light-cyan;
     text-align: center;
     margin-top: 1em;
   }
+
   .pattern {
     margin-top: 1em;
 
