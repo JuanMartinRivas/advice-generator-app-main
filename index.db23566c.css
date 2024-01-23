@@ -47,6 +47,7 @@ body {
   width: 90%;
   max-width: 400px;
   margin: 0 auto;
+  transform: translateY(50%);
 }
 
 .row {
@@ -65,13 +66,19 @@ main .card {
   border-radius: 15px;
   padding: 1.75em 1em .25em;
   position: relative;
-  top: 5em;
+}
+
+@media (display-mode: fullscreen) {
+  main .card {
+    transform: translateY(25%);
+  }
 }
 
 main .advice-id {
   color: #52ffa8;
   text-align: center;
   letter-spacing: .25em;
+  text-transform: uppercase;
   font-size: .45rem;
   font-weight: 600;
 }

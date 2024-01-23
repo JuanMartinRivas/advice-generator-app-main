@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"hPUzS":[function(require,module,exports) {
+})({"acUdN":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -226,7 +226,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
     var hostname = getHostname();
     var port = getPort();
-    var protocol = HMR_SECURE || location.protocol == "https:" && !/localhost|127.0.0.1|0.0.0.0/.test(hostname) ? "wss" : "ws";
+    var protocol = HMR_SECURE || location.protocol == "https:" && ![
+        "localhost",
+        "127.0.0.1",
+        "0.0.0.0"
+    ].includes(hostname) ? "wss" : "ws";
     var ws;
     try {
         ws = new WebSocket(protocol + "://" + hostname + (port ? ":" + port : "") + "/");
@@ -599,6 +603,6 @@ function handleClick() {
     });
 }
 
-},{}]},["hPUzS","lKGVG"], "lKGVG", "parcelRequire8d52")
+},{}]},["acUdN","lKGVG"], "lKGVG", "parcelRequire8d52")
 
 //# sourceMappingURL=index.193744e8.js.map
